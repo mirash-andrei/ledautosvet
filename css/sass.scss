@@ -1,0 +1,52 @@
+@charset "UTF-8";
+//COLORS
+$white: #FDFDFD;
+$red: #e02022;
+$gray: #7A7A7A;
+$gray2: #DBDBDB;
+$black: #131313;
+//MARGINS
+$horizontal_margin: 50px;
+@font-face {
+  font-family: 'Lato';
+  src :url('../fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.lh-0{
+  line-height: 0;
+}
+.absolute_link{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.btn.focus, .btn:focus,.form-control:focus {
+  outline: 0!important;
+  border-color: $red!important;
+  box-shadow: 0 0 0 0.2rem #e0202236!important;
+  -webkit-box-shadow: 0 0 0 0.2rem #e0202236!important;
+  -moz-box-shadow: 0 0 0 0.2rem #e0202236!important;
+}
+@mixin animation_0_25 {
+  transition: all .25s ease-out;
+  -webkit-transition: all .25s ease-out;
+  -moz-transition: all .25s ease-out;
+  -o-transition: all .25s ease-out;
+  -ms-transition: all .25s ease-out;
+}
+@mixin box-sizing {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+@mixin box-shadow {
+  -webkit-box-shadow: 0 15px 10px -10px rgba(0,0,0,0.5),0 1px 0 rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 15px 10px -10px rgba(0,0,0,0.5),0 1px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 15px 10px -10px rgba(0,0,0,0.3),0 1px 0 rgba(0,0,0,0.1);
+}
+
+

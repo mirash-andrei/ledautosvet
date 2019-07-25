@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Автосвет</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- slick slider CSS -->
+    <link href="slick/slick.css" rel="stylesheet">
+    <link href="slick/slick-theme.css" rel="stylesheet">
+    <!-- font awecowe CSS -->
+    <link href="fontawesome-pro/css/all.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="template_styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="d-none">
+    <svg width="13" height="19" viewBox="0 0 13 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path id="tel1" d="M11.247 0H1.22589C0.549897 0 0 0.523744 0 1.16754V17.274C0 17.9177 0.549938 18.4415 1.22593 18.4415H11.247C11.923 18.4415 12.473 17.9178 12.473 17.274V1.16754C12.4729 0.523744 11.923 0 11.247 0ZM0.614318 2.9345H11.8586V15.1305H0.614318V2.9345ZM1.22589 0.585058H11.247C11.5842 0.585058 11.8586 0.846345 11.8586 1.16754V2.54446H0.614318V1.16754C0.614318 0.846345 0.888673 0.585058 1.22589 0.585058ZM11.247 17.8564H1.22589C0.888673 17.8564 0.614277 17.5951 0.614277 17.2739V15.5205H11.8586V17.2739C11.8586 17.5951 11.5842 17.8564 11.247 17.8564Z"/>
+        <path id="tel2" d="M6.23646 15.7791C5.68173 15.7791 5.23045 16.2089 5.23045 16.7372C5.23045 17.2656 5.68177 17.6953 6.23646 17.6953C6.79115 17.6953 7.24247 17.2655 7.24247 16.7372C7.24247 16.209 6.79119 15.7791 6.23646 15.7791ZM6.23646 17.3053C5.90755 17.3053 5.64 17.0504 5.64 16.7372C5.64 16.424 5.90755 16.1692 6.23646 16.1692C6.56537 16.1692 6.83292 16.424 6.83292 16.7372C6.83292 17.0504 6.56537 17.3053 6.23646 17.3053Z"/>
+        <path id="tel3" d="M4.84402 1.85833H7.62893C7.74205 1.85833 7.83371 1.771 7.83371 1.66331C7.83371 1.55562 7.74205 1.46829 7.62893 1.46829H4.84402C4.73091 1.46829 4.63925 1.55562 4.63925 1.66331C4.63925 1.771 4.73091 1.85833 4.84402 1.85833Z"/>
+        <path id="tel4" d="M4.10696 1.85833C4.16061 1.85833 4.21345 1.83766 4.25153 1.80139C4.28962 1.76472 4.31174 1.7148 4.31174 1.66331C4.31174 1.61183 4.28962 1.5619 4.25153 1.52524C4.2134 1.48896 4.16057 1.46829 4.10696 1.46829C4.0529 1.46829 4.00044 1.48896 3.96199 1.52524C3.9239 1.56151 3.90219 1.61183 3.90219 1.66331C3.90219 1.7148 3.9239 1.76472 3.96199 1.80139C4.00007 1.83766 4.0529 1.85833 4.10696 1.85833Z"/>
+        <path id="clock" d="M7.5 0C3.35787 0 0 3.35787 0 7.5C0 11.6421 3.35787 15 7.5 15C11.6421 15 15 11.6421 15 7.5C14.9947 3.36008 11.6399 0.00530888 7.5 0ZM7.82175 14.3404V13.0212C7.82175 12.8435 7.67769 12.6995 7.5 12.6995C7.32231 12.6995 7.17825 12.8435 7.17825 13.0212V14.3404C3.65022 14.172 0.828025 11.3498 0.659588 7.82175H1.97876C2.15645 7.82175 2.30051 7.67769 2.30051 7.5C2.30051 7.32231 2.15645 7.17825 1.97876 7.17825H0.659588C0.828025 3.65022 3.65022 0.828025 7.17825 0.659588V1.97876C7.17825 2.15645 7.32231 2.30051 7.5 2.30051C7.67769 2.30051 7.82175 2.15645 7.82175 1.97876V0.659588C11.3498 0.828025 14.172 3.65022 14.3404 7.17825H13.0212C12.8435 7.17825 12.6995 7.32231 12.6995 7.5C12.6995 7.67769 12.8435 7.82175 13.0212 7.82175H13.0245H14.3436C14.1751 11.3509 11.351 14.1736 7.82175 14.3404Z"/>
+        <path id="clock2" d="M10.8945 10.4923L7.82177 7.36811V4.12165C7.82177 3.94396 7.67771 3.7999 7.50002 3.7999C7.32233 3.7999 7.17827 3.94396 7.17827 4.12165V7.50003C7.17863 7.58445 7.21213 7.66533 7.27158 7.72525L10.4344 10.9428C10.5588 11.0698 10.7626 11.072 10.8897 10.9476C11.0167 10.8232 11.0189 10.6194 10.8945 10.4923Z"/>
+        <path id="user" d="M15.5891 15.2538L15.5214 15.2238C15.3597 15.1516 15.1969 15.0835 15.0309 15.0197C14.8498 14.9485 14.6661 14.8826 14.4796 14.8209C14.3324 14.7734 14.1841 14.7291 14.0343 14.6859C13.806 14.621 13.5754 14.5624 13.338 14.5107C13.2574 14.4944 13.1752 14.4786 13.0936 14.4643L13.0377 14.4537C12.8975 14.4268 12.7568 14.4031 12.6144 14.3825L12.5736 14.3761L12.5694 14.3751L12.5286 14.3698C12.4104 14.3524 12.2927 14.3361 12.1702 14.3224L11.7533 14.2887C11.2408 14.2554 10.7126 14.2565 10.2061 14.2929L10.0584 14.305L9.98956 14.3103L9.8171 14.3255C9.65861 14.3418 9.5012 14.3635 9.3438 14.3883L9.29757 14.3946C9.19015 14.412 9.08265 14.4315 8.97682 14.4511C8.8592 14.4717 8.74309 14.4943 8.62706 14.5191C8.40253 14.5687 8.1795 14.6251 7.96358 14.6868C7.79162 14.7353 7.62193 14.7886 7.46235 14.8424L7.35167 14.8815C7.0132 14.9991 6.6769 15.1341 6.3513 15.2823L6.26428 15.3229L6.26269 15.3251C2.45524 17.1141 0 20.9258 0 25.0617C0 25.1567 0.00643679 25.25 0.012372 25.3439L0.0408775 26H21.9581L21.9876 25.3513C21.9941 25.2553 22 25.1598 22 25.0617C22 20.8598 19.4852 17.0144 15.5891 15.2538ZM1.07485 24.9451C1.12108 21.2316 3.35763 17.825 6.76643 16.2559L6.87602 16.2137L6.88889 16.2016C7.15589 16.0819 7.4315 15.9727 7.71087 15.8762L7.79948 15.8451C7.95154 15.7934 8.10301 15.746 8.26042 15.7022C8.45653 15.6457 8.6564 15.5951 8.85678 15.5508C8.96043 15.5292 9.06417 15.5086 9.17109 15.4891C9.25594 15.4738 9.34028 15.458 9.42572 15.4448L9.4676 15.4374C9.62124 15.4137 9.77547 15.392 9.92912 15.3757L10.2805 15.3457C10.7403 15.3124 11.1804 15.3077 11.7133 15.3457L12.0549 15.3736C12.1393 15.3832 12.2236 15.3942 12.3263 15.4084L12.4493 15.4258C12.5777 15.4443 12.7061 15.4659 12.835 15.4897L12.8952 15.5008C12.9678 15.514 13.0397 15.5277 13.1079 15.5419C13.3196 15.5873 13.5275 15.641 13.7338 15.6996C13.8702 15.7387 14.0057 15.7787 14.1378 15.822C14.3054 15.8768 14.4709 15.9365 14.6348 16.0002C14.7922 16.0609 14.9474 16.1258 15.1011 16.1949L15.1279 16.207C18.6141 17.7772 20.878 21.1948 20.9242 24.9442L1.07485 24.9451ZM8.34435 12.9332C8.42493 12.9664 8.50819 12.9954 8.59145 13.0245L8.76608 13.0867C8.8332 13.1119 8.90091 13.1368 8.96971 13.1579C9.61013 13.3557 10.28 13.4574 10.9613 13.4628L11.0155 13.4638C11.2492 13.4638 11.4835 13.4517 11.708 13.429C11.7853 13.4216 11.8606 13.4095 11.9363 13.3969L12.1045 13.3721C12.199 13.3599 12.2936 13.3462 12.3925 13.3273C12.4602 13.3136 12.5257 13.2962 12.5913 13.2788L12.775 13.2329C12.8658 13.2113 12.9566 13.1897 13.0463 13.1622C13.1022 13.1448 13.157 13.1248 13.2113 13.1047L13.359 13.0525C13.4643 13.0167 13.5706 12.9797 13.6771 12.936C13.7184 12.9186 13.7587 12.8996 13.7984 12.8806L13.8462 12.8574C13.9919 12.7935 14.1369 12.7281 14.2809 12.6522L14.3743 12.5974C14.5355 12.5077 14.6961 12.4149 14.8589 12.3057C14.9432 12.2498 15.0238 12.1871 15.1033 12.1249L15.3784 11.9149C16.9601 10.6296 17.8691 8.74353 17.8691 6.78735L17.8724 6.73146C17.8724 3.0195 14.7961 0 11.015 0C7.40584 0 4.40314 2.77051 4.17911 6.30743L4.17318 6.395C4.16457 6.50628 4.15763 6.61756 4.15763 6.73146C4.15654 9.44273 5.8 11.8768 8.34435 12.9332ZM5.24443 6.46812L5.25087 6.37317C5.43996 3.3906 7.97143 1.0547 11.0144 1.0547C14.2035 1.0547 16.7973 3.60109 16.8 6.68329L16.7968 6.73869C16.7946 8.4275 16.0275 10.0177 14.687 11.11L14.4318 11.3009C14.3749 11.3463 14.3174 11.3916 14.2459 11.4402C14.117 11.5262 13.9805 11.6037 13.8419 11.6807L13.7651 11.7266C13.649 11.7878 13.5271 11.8421 13.4003 11.8975L13.2579 11.965C13.1762 11.9982 13.0903 12.0272 13.0054 12.0563L12.8281 12.119C12.7937 12.1317 12.7588 12.1454 12.7249 12.1554C12.6589 12.1754 12.5912 12.1908 12.524 12.2071L12.3096 12.2609C12.2634 12.2731 12.2178 12.2857 12.177 12.2942C12.1055 12.3079 12.0324 12.3174 11.9599 12.3274L11.7558 12.3574C11.7064 12.3659 11.6569 12.3743 11.6016 12.3796C11.4227 12.3981 11.2427 12.4081 11.0601 12.4096L11.0096 12.4091H11.0085C10.4202 12.4086 9.84268 12.3226 9.29038 12.1528C9.24256 12.1381 9.19583 12.1196 9.1491 12.1022L8.94714 12.03C8.88428 12.0083 8.822 11.9872 8.76181 11.9625C6.61713 11.072 5.23097 9.01812 5.23097 6.73179C5.23097 6.64267 5.238 6.55511 5.24443 6.46812Z"/>
+    </svg>
+</div>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-lg-3 col-md-6 offset-md-0 col-8 offset-2 mb-3 mb-md-0">
+                <a href="#">
+                    <img src="img/Logo.png" alt="">
+                </a>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 nav_list d-flex align-items-center justify-content-around">
+                <a href="">Товары</a>
+                <a href="">Услуги</a>
+                <a href="">Наши работы</a>
+                <a href="">Контакты</a>
+            </div>
+            <div class="col-xl-4 col-lg-5">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 mt-lg-0 mt-3 contact_head d-flex d-md-block justify-content-md-start justify-content-around">
+                        <a href="tel:8 918 030 79 99">
+                            <svg class="mr-1" width="13" height="19" viewBox="0 0 13 19">
+                                <use xlink:href="#tel1"></use>
+                                <use xlink:href="#tel2"></use>
+                                <use xlink:href="#tel3"></use>
+                                <use xlink:href="#tel4"></use>
+                            </svg>
+                            8 918 030 79 99</a>
+                        <p class="d-flex mt-md-2">
+                            <svg class="mr-1 mt-1" width="15" height="15" viewBox="0 0 15 15">
+                                <use xlink:href="#clock"></use>
+                                <use xlink:href="#clock2"></use>
+
+                            </svg>
+                            С 10:00 до 19:00 <br> Пн-Сб, Вых. Вс </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 d-flex align-items-center">
+                        <div class="row w-100 m-0 align-items-center justify-content-md-between justify-content-around">
+                            <div class="soc_link">
+                                <a class="absolute_link" href=""></a>
+                                <svg width="22" height="26" viewBox="0 0 22 26">
+                                    <use xlink:href="#user"></use>
+                                </svg>
+                            </div>
+                            <div class="soc_link">
+                                <a class="absolute_link" href=""></a>
+                                <object type="image/svg+xml" data="img/vk.svg">
+                                    <img src="img/vk.png">
+                                </object>
+                            </div>
+                            <div class="soc_link">
+                                <a class="absolute_link" href=""></a>
+                                <object type="image/svg+xml" data="img/instagram.svg">
+                                    <img src="img/instagram.png">
+                                </object>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="search_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-9 col-sm-8 offset-lg-1">
+                <input type="text" class="form-control">
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4">
+                <input type="submit" class="btn" placeholder="Поиск">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main_slider">
+    <div class="slide d-flex align-items-center" style="background: url(img/baner.png); background-repeat: no-repeat; background-size: cover;">
+        <div class="container ">
+            <div class="col-lg-10 offset-lg-1">
+                <h2>Фары премиум <br> класса для вас</h2>
+            </div>
+        </div>
+    </div>
+    <div class="slide d-flex align-items-center" style="background: url(img/baner.png); background-repeat: no-repeat; background-size: cover;">
+        <div class="container ">
+            <div class="col-lg-10 offset-lg-1">
+                <h2>Фары премиум <br> класса для вас</h2>
+            </div>
+        </div>
+    </div>
+    <div class="slide d-flex align-items-center" style="background: url(img/baner.png); background-repeat: no-repeat; background-size: cover;">
+        <div class="container ">
+            <div class="col-lg-10 offset-lg-1">
+                <h2>Фары премиум <br> класса для вас</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hot_deals">
+    <div class="container p-0">
+        <h3 class="col-12">Горячие предложения</h3>
+        <div class="hot_deals_slider">
+            <div class="col-md-4 product_card">
+                <div class="img_card" style="background: url(img/Rectangle.png); background-size: cover; background-position: top;"></div>
+                <div class="row">
+                    <div class="col-lg-7">Штатная автомагнитола для BMW3 X5 E39 E53</div>
+                    <div class="col-lg-5 d-flex align-items-center">28 300 руб.</div>
+                </div>
+                <button class="btn" type="submit">Оформить заказ</button>
+            </div>
+            <div class="col-md-4 product_card">
+                <div class="img_card" style="background: url(img/Rectangle.png); background-size: cover; background-position: top;"></div>
+                <div class="row">
+                    <div class="col-lg-7">Штатная автомагнитола для BMW3 X5 E39 E53</div>
+                    <div class="col-lg-5 d-flex align-items-center">28 300 руб.</div>
+                </div>
+                <button class="btn" type="submit">Оформить заказ</button>
+            </div>
+            <div class="col-md-4 product_card">
+                <div class="img_card" style="background: url(img/Rectangle.png); background-size: cover; background-position: top;"></div>
+                <div class="row">
+                    <div class="col-lg-7">Штатная автомагнитола для BMW3 X5 E39 E53</div>
+                    <div class="col-lg-5 d-flex align-items-center">28 300 руб.</div>
+                </div>
+                <button class="btn" type="submit">Оформить заказ</button>
+            </div>
+            <div class="col-md-4 product_card">
+                <div class="img_card" style="background: url(img/Rectangle.png); background-size: cover; background-position: top;"></div>
+                <div class="row">
+                    <div class="col-lg-7">Штатная автомагнитола для BMW3 X5 E39 E53</div>
+                    <div class="col-lg-5 d-flex align-items-center">28 300 руб.</div>
+                </div>
+                <button class="btn" type="submit">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="advantage" style="background: url(img/advantage.png); background-repeat: no-repeat; background-size: cover;">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5 offset-xl-7 col-lg-6 offset-lg-6">
+                <h3>В чем преимущества наших компонентов перед заводскими?</h3>
+                <p>-Предлагаемые нами линзы устойчивы к выгоранию, т.к. хромированное покрытие их отражателей высокотемпературное.</p>
+                <p>-Фокусирующий элемент наших линз практически не поглощает свет. Это обусловлено тем, что он изготовлен из кварцевого материала на более высокой частоте, нежели фокусирующие элементы заводских линз, установленных на любой марке автомобилей.</p>
+                <p>-Наши диодные световые приборы (LED-линзы) наиболее долговечны и совершенно не прихотливы в обслуживании. Их долговечность обусловлена оптимальным расположением светодиодных чипов внутри прибора и адаптированным под них охлаждением.</p>
+                <p>-Ассортимент LED-ламп, устанавливаемых нами в габаритные огни, подсветку салона, дверей, номерных знаков и т.д. позволяет производить замену заводских ламп на любой марке автомобилей в соответствии с требованиями ЭБУ</p>
+                <p>-ДХО, устанавливаемые нами в качестве элементов тюнинга, имеют ряд преимуществ перед заводскими.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 d-flex">
+                <div class="services_card d-flex flex-column justify-content-center" style="background: url(img/1s.png); background-size: cover; background-position: center;">
+                    <h3>Разбор фар на любом авто  </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+                        unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                    <a href=""><i class="fal fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-9 d-flex">
+                <div class="row">
+                    <div class="col-md-4 d-flex">
+                        <div class="services_card d-flex flex-column justify-content-center" style="background: url(img/2s.png); background-size: cover; background-position: center;">
+                            <h3>Разбор фар на любом авто  </h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                            <a href=""><i class="fal fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex">
+                        <div class="services_card d-flex flex-column justify-content-center" style="background: url(img/3s.png); background-size: cover; background-position: center;">
+                            <h3>Разбор фар на любом авто  </h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                            <a href=""><i class="fal fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex">
+                        <div class="services_card d-flex flex-column justify-content-center" style="background: url(img/4s.png); background-size: cover; background-position: center;">
+                            <h3>Разбор фар на любом авто  </h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                            <a href=""><i class="fal fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 d-flex">
+                        <div class="services_card d-flex flex-column justify-content-center" style="background: url(img/5s.png); background-size: cover; background-position: center;">
+                            <h3>Разбор фар на любом авто  </h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                            <a href=""><i class="fal fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 offset-lg-9"><a href="" class="btn">Узнать об услугах</a></div>
+        </div>
+    </div>
+</div>
+<div class="advantage" style="background: url(img/i8.png); background-repeat: no-repeat; background-size: cover;">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5 offset-xl-7 col-lg-6 offset-lg-6">
+                <h3>Нужен заголовок к компании</h3>
+                <p>Наша компания затюнингует и доработает вашу автооптику.
+                    Придаст современный и индивидуальный зоркий взгляд вашему автомобилю.
+                    Мы разберем ваши фары по заводкому шву, при этом не повредив корпус,
+                    либо стекло, независимо от марки автомобиля, восстановим прозрачность стекол фар,
+                    устраним запотевание, сделаем гораздо ярче свет вашего автомобиля, и при этом он не будет
+                    слепить встречные авто. Также установим различные виды ДХО, подсветок линз, разработаем
+                    индивидуальный дизайн фар и реализуем его на вашем автомобиле и дадим гарантию на все товары и услуги.</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <a href="#">
+                    <img src="img/Logo.png" alt="">
+                </a>
+                <p>Специализированый центр <br>  авто-света г. Краснодар. <br>  Продажа и установака фар.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xl-5">
+                <p>Контакты</p>
+                <p>г. Краснодар Ул. Ковтюха, 125</p>
+                <p>тел. <a href="tel:8 (918) 030-79-99">8 (918) 030-79-99</a></p>
+                <p><a href="mailto:led-avto-svet@mail.ru">led-avto-svet@mail.ru</a></p>
+                <p>С 10:00 до 19:00</p>
+                <p>Понедельник-суббота</p>
+            </div>
+            <div class="col-lg-5 col-md-6 col-xl-4 offset-lg-0 offset-md-6">
+                <p><a href="">Политика конфиденциальности</a></p>
+                <p><a href="">Соглашение на обработку персональных данных</a></p>
+                <div class="row w-100 mx-0 align-items-center justify-content-md-between justify-content-around">
+                    <div class="soc_link">
+                        <a class="absolute_link" href=""></a>
+                        <object type="image/svg+xml" data="img/vk.svg">
+                            <img src="img/vk.png">
+                        </object>
+                    </div>
+                    <div class="soc_link">
+                        <a class="absolute_link" href=""></a>
+                        <object type="image/svg+xml" data="img/instagram.svg">
+                            <img src="img/instagram.png">
+                        </object>
+                    </div>
+                    <button class="open-modal-btn open_feedback btn d-flex align-items-center justify-content-center">Обратная связь</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="cover"></div>
+<div class="modal modal_ask_product align-items-center justify-content-center">
+    <div class="content">
+        <div class="closed"><i class="fal fa-times"></i></div>
+        <p class="modal_heading">Задать вопрос</p>
+        <form class="feedback d-flex flex-wrap" id="vopros">
+            <div class="col-lg-6 text-left">
+                <label>Ваше имя</label>
+                <input class="form-control" type="text" name="vopros_name" placeholder="Имя">
+            </div>
+            <div class="col-lg-6 text-left">
+                <label>Ваш Email</label>
+                <input class="form-control" type="text" name="vopros_email" placeholder="Email">
+            </div>
+            <div class="col-12">
+                <textarea class="form-control" name="vopros_message" rows="6" placeholder="Ваш вопрос"></textarea>
+                <button class="btn" type="submit" name="send_vopros">Отправить</button>
+                <p class="warning-text">Нажимая  «Отправить», вы даете согласие на обработку <a href="/privacy-policy/" target="_blank">персональных данных</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
+<!--<script src="js/bootstrap.min.js"></script>-->
+<script src="slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
